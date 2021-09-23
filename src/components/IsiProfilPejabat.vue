@@ -1,11 +1,13 @@
 <template>  
-    <div class="spacing-playground pa-12 pt-7">
-        <v-row>
+    <div>
+        <v-divider style="background-color:#EEEEEE; height: 20px; width:100%;"></v-divider>
+        <v-divider style="background-color:#EEEEEE; height: 20px; width:100%;"></v-divider>
+        <v-row wrap class="d-flex align-start mb-6 spacing-playground pa-10">
             <v-col>
                 <v-col>
                     <v-row>
                         <v-col>
-                            <h2 class="red--text ml-3">Joko Widodo</h2>
+                            <h1 class="red--text ml-3">Joko Widodo</h1>
                         </v-col>
                     </v-row>
 
@@ -14,8 +16,8 @@
                             <v-col>
                                 <v-img
                                 :src="require('../assets/JokoWi.jpg')"
-                                height="240"
-                                width="180"
+                                height="300"
+                                width="210"
                                 class="mt-1"
                                 />
                             </v-col>
@@ -156,7 +158,7 @@
 
                     <v-row class="mt-10">
                         <v-col>
-                            <h4 class="red--text">Biografi</h4>
+                            <h3 class="red--text">Biografi</h3>
                             <v-divider style="background-color:red; height: 20px; width:5%;"></v-divider>
                             <v-divider style="background-color:red; height: 5px; width:100%;"></v-divider>
 
@@ -182,7 +184,7 @@
 
                     <v-row class="mt-10">
                         <v-col>
-                            <h4 class="red--text">Berita Terkait</h4>
+                            <h3 class="red--text">Berita Terkait</h3>
                             <v-divider style="background-color:red; height: 20px; width:8%;"></v-divider>
                             <v-divider style="background-color:red; height: 5px; width:100%;"></v-divider>
 
@@ -205,7 +207,7 @@
                                             <v-card
                                             :color="active ? undefined : 'grey lighten-1'"
                                             class="ma-4"
-                                            height="200"
+                                            height="300"
                                             width="250"
                                             @click="toggle"
                                             >
@@ -230,23 +232,25 @@
                         </v-col>
                     </v-row>
 
-                    <v-row class="mt-10">
+                    <v-row>
                         <v-col>
-                            <h4 class="red--text">Komentar</h4>
+                            <h3 class="red--text">Komentar</h3>
                             <v-divider style="background-color:red; height: 20px; width:6%;"></v-divider>
                             <v-divider style="background-color:red; height: 5px; width:100%;"></v-divider>
 
                             <v-col>
+                                <br />
+                                <v-row>
                                 <v-textarea
                                 label="Tulis Komentar Anda.."
                                 auto-grow
                                 outlined
                                 color="red"
-                                rows="2"
-                                row-height="30"
+                                rows="1"
+                                row-height="20"
                                 ></v-textarea>
 
-                                <v-spacer></v-spacer>
+                                <p>&emsp;</p>
 
                                 <v-btn
                                 width="100px"
@@ -254,6 +258,7 @@
                                 class="d-flex align-right pa-4 mx-auto white--text">
                                 Kirim
                                 </v-btn>
+                                </v-row>
                                 
                                 <br />
                 
@@ -269,7 +274,7 @@
                                                 <v-list-item-avatar
                                                 size="40"
                                                 color="grey">
-                                                    <span class="white--text text-h5">B</span>
+                                                    <!-- <span class="white--text text-h5">B</span> -->
                                                 </v-list-item-avatar>
                                         
                                                 <v-list-item-title class="text-h7 mb-1">
@@ -319,7 +324,7 @@
                                                 <v-list-item-avatar
                                                 size="40"
                                                 color="grey">
-                                                    <span class="white--text text-h5">B</span>
+                                                    <!-- <span class="white--text text-h5">B</span> -->
                                                 </v-list-item-avatar>
                                         
                                                 <v-list-item-title class="text-h7 mb-1">
@@ -369,7 +374,7 @@
                                                 <v-list-item-avatar
                                                 size="40"
                                                 color="grey">
-                                                    <span class="white--text text-h5">B</span>
+                                                    <!-- <span class="white--text text-h5">B</span> -->
                                                 </v-list-item-avatar>
                                         
                                                 <v-list-item-title class="text-h7 mb-1">

@@ -2,22 +2,25 @@
     <div class="homepage">
         <v-responsive :aspect-ratio="16/9">
             <Header />
-            <BannerUtama />
+            <!-- <BannerUtama /> -->
             <IsiHomePage />
+            <Footer />
         </v-responsive>
     </div>
 </template>
 
 <script>
 import Header from '@/components/Header.vue'
-import BannerUtama from '@/components/BannerUtama.vue'
+// import BannerUtama from '@/components/BannerUtama.vue'
 import IsiHomePage from '@/components/IsiHomePage.vue'
+import Footer from '@/components/Footer.vue'
 export default {
     name: 'HomePage',
     components: {
         Header,
-        BannerUtama,
+        // BannerUtama,
         IsiHomePage,
+        Footer,
     }
 }
 </script>

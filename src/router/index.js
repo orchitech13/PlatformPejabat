@@ -25,22 +25,70 @@ const routes = [{
             import ( /* webpackChunkName: "about" */ '../views/Register.vue')
     },
     {
-        path: '/cariprofil',
+        path: '/cariProfil',
         name: 'CariProfil',
         component: () =>
             import ( /* webpackChunkName: "about" */ '../views/CariProfil.vue')
     },
     {
-        path: '/profilpejabat',
+        path: '/profilPejabat',
         name: 'ProfilPejabat',
         component: () =>
             import ( /* webpackChunkName: "about" */ '../views/ProfilPejabat.vue')
     },
     {
-        path: '/detailberita',
-        name: 'DetailBerita',
+        path: '/detailBeritaHomePage',
+        name: 'DetailBeritaHomePage',
         component: () =>
-            import ( /* webpackChunkName: "about" */ '../views/DetailBerita.vue')
+            import ( /* webpackChunkName: "about" */ '../views/DetailBeritaHomePage.vue')
+    },
+    {
+        path: '/detailBeritaBeritaUtama',
+        name: 'DetailBeritaBeritaUtama',
+        component: () =>
+            import ( /* webpackChunkName: "about" */ '../views/DetailBeritaBeritaUtama.vue')
+    },
+    {
+        path: '/berita',
+        name: 'Berita',
+        component: () =>
+            import ( /* webpackChunkName: "about" */ '../views/Berita.vue')
+    },
+    {
+        path: '/profil',
+        name: 'Profil',
+        component: () =>
+            import ( /* webpackChunkName: "about" */ '../views/Profil.vue')
+    },
+    {
+        path: '/editProfil',
+        name: 'EditProfil',
+        component: () =>
+            import ( /* webpackChunkName: "about" */ '../views/EditProfil.vue')
+    },
+    {
+        path: '/gantiEmail',
+        name: 'GantiEmail',
+        component: () =>
+            import ( /* webpackChunkName: "about" */ '../views/GantiEmail.vue')
+    },
+    {
+        path: '/verifikasiEmail',
+        name: 'VerifikasiEmail',
+        component: () =>
+            import ( /* webpackChunkName: "about" */ '../views/VerifikasiEmail.vue')
+    },
+    {
+        path: '/gantiPassword',
+        name: 'GantiPassword',
+        component: () =>
+            import ( /* webpackChunkName: "about" */ '../views/GantiPassword.vue')
+    },
+    {
+        path: '/tentangKami',
+        name: 'TentangKami',
+        component: () =>
+            import ( /* webpackChunkName: "about" */ '../views/TentangKami.vue')
     },
 ]
 

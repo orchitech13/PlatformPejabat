@@ -1,5 +1,7 @@
 <template>
     <div>
+        <v-divider style="background-color:#EEEEEE; height: 20px; width:100%;"></v-divider>
+        <v-divider style="background-color:#EEEEEE; height: 20px; width:100%;"></v-divider>
         <v-card
         class="banner_cari"
         >
@@ -7,7 +9,7 @@
                 <h1> Cari profil politikus di database terlengkap se-Indonesia!</h1></v-row>
                 <v-row>
                     <v-col></v-col>
-                    <v-col>
+                    <v-col cols="8">
                         <v-text-field
                         v-model="search"
                         clearable
@@ -17,6 +19,7 @@
                         append-icon="mdi-magnify"
                         label="Tulis sesuatu.."
                         class="white"
+                        color="red"
                         >
                         </v-text-field>
                     </v-col>
@@ -145,6 +148,7 @@
                 class="rounded-lg mt-5"
                 max-width="900"
                 max-height="260"
+                to="/profilPejabat"
                 >
                     <v-card-text>
                         <v-row>
@@ -210,7 +214,6 @@
 <script>
 export default {
     name: "IsiCariProfil",
-
     data: () => ({
       dapil: ['Foo', 'Bar', 'Fizz', 'Buzz'],
       fraksi: ['A', 'B', 'C', 'D'],
